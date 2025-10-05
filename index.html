@@ -1,0 +1,418 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wellgevity • Lula Retreat 2026</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background: linear-gradient(to bottom, #ecfdf5, white, #fff1f2); }
+  </style>
+</head>
+<body class="text-slate-800">
+  <div id="root"></div>
+
+  <script type="text/babel">
+    function WellgevityRetreatLanding() {
+      return (
+        <div className="min-h-screen bg-gradient-to-b from-emerald-50 via-white to-rose-50 text-slate-800">
+          <header className="sticky top-0 z-40 backdrop-blur bg-white/70 border-b border-slate-200">
+            <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <svg width="164" height="28" viewBox="0 0 820 140" className="text-emerald-700">
+                  <defs>
+                    <linearGradient id="wgGrad" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stopColor="#047857"/>
+                      <stop offset="100%" stopColor="#10b981"/>
+                    </linearGradient>
+                  </defs>
+                  <text x="0" y="105" fontFamily="'Inter',ui-sans-serif" fontWeight="700" fontSize="110" fill="url(#wgGrad)">WELLGEVITY</text>
+                </svg>
+                <span className="hidden sm:block text-sm tracking-wide text-slate-500">Wellness • Joy • Longevity</span>
+              </div>
+              <nav className="hidden md:flex items-center gap-6 text-sm">
+                <a href="#details" className="hover:text-emerald-700">Retreat</a>
+                <a href="#inclusions" className="hover:text-emerald-700">What’s Included</a>
+                <a href="#policies" className="hover:text-emerald-700">Policies</a>
+                <a href="#signup" className="px-4 py-2 rounded-xl bg-emerald-600 text-white hover:bg-emerald-700 shadow">Reserve</a>
+              </nav>
+            </div>
+          </header>
+
+          <section className="relative overflow-hidden">
+            <div className="absolute inset-0 -z-10 bg-[url('https://images.unsplash.com/photo-1519821172140-1a6b91bcd7b3?q=80&w=1600&auto=format&fit=crop')] bg-cover bg-center opacity-70" />
+            <div className="max-w-5xl mx-auto px-4 py-24 sm:py-28">
+              <div className="backdrop-blur-md bg-white/60 rounded-3xl p-8 sm:p-12 shadow-xl">
+                <p className="uppercase tracking-widest text-xs text-slate-600">Lula Resort • Tulum, Mexico</p>
+                <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight text-slate-900">Reclaim Your Joy — Lula Wellness Retreat</h1>
+                <p className="mt-3 text-lg text-slate-700">March 17–22, 2026 · Hosted by Tracy Hook, NBC-HWC</p>
+                <p className="mt-4 text-slate-700">Five nights of sun, ceremony, and science-backed coaching designed to reset your nervous system and reignite purpose.</p>
+                <div className="mt-6 flex flex-wrap gap-3">
+                  <a href="#signup" className="px-5 py-3 rounded-2xl bg-emerald-600 text-white hover:bg-emerald-700 shadow">Reserve Your Spot</a>
+                  <a href="#details" className="px-5 py-3 rounded-2xl bg-white/80 hover:bg-white border border-slate-200">See Details</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="details" className="max-w-6xl mx-auto px-4 py-16">
+            <div className="grid md:grid-cols-2 gap-10 items-start">
+              <div className="bg-white rounded-3xl shadow-sm p-8 border border-slate-100">
+                <h2 className="text-2xl font-semibold">Retreat Overview</h2>
+                <ul className="mt-4 space-y-2 text-slate-700">
+                  <li>• <b>Dates:</b> March 17–22, 2026 (5 nights)</li>
+                  <li>• <b>Location:</b> Lula Resort, Tulum, Mexico</li>
+                  <li>• <b>Rooms:</b> 10 total (Beach Master Suite, Upper & Lower Beach Suites)</li>
+                  <li>• <b>Guests:</b> 12 (11 guests + Tracy)</li>
+                  <li>• <b>Hosted by:</b> Tracy Hook, Board-Certified Health & Wellness Coach (NBC-HWC)</li>
+                </ul>
+                <div className="mt-6 p-4 rounded-2xl bg-emerald-50 border border-emerald-100">
+                  <p className="text-sm text-emerald-900">This page mirrors Lula’s proposal: family-style dining, private wellness classes, canal float, spa services, and golf transport are curated for the group experience.</p>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-3xl shadow-sm p-8 border border-slate-100">
+                <h3 className="text-xl font-semibold">Included at a Glance</h3>
+                <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 text-slate-700">
+                  <li>• 5 Breakfasts</li>
+                  <li>• 3 Lunches</li>
+                  <li>• 5 Dinners (family style)</li>
+                  <li>• Private Ice Bath</li>
+                  <li>• Private Sound Bath</li>
+                  <li>• Private Salsa Class</li>
+                  <li>• 2 Yoga Classes</li>
+                  <li>• 2 Fitness Classes</li>
+                  <li>• Sian Ka’an Canal Float + Transport</li>
+                  <li>• 2x Round Trip Transport to Golf</li>
+                  <li>• 3x 60-min Ayurvedic Massages</li>
+                </ul>
+                <p className="mt-3 text-xs text-slate-500">Note: Cenote entrance (~$25/person) and golf fees (~$550/person for two rounds) are external and not included in the package.</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="inclusions" className="bg-white/70 border-y border-slate-200">
+            <div className="max-w-6xl mx-auto px-4 py-16">
+              <h2 className="text-2xl font-semibold">Investment & Payment Schedule</h2>
+              <div className="mt-6 grid md:grid-cols-3 gap-6">
+                <div className="rounded-3xl p-6 bg-white shadow-sm border border-slate-100">
+                  <h4 className="font-semibold">Per-Person Deposit</h4>
+                  <p className="mt-2 text-slate-700">$500–$1,000 non-refundable to reserve your room.</p>
+                </div>
+                <div className="rounded-3xl p-6 bg-white shadow-sm border border-slate-100">
+                  <h4 className="font-semibold">Second Payment</h4>
+                  <p className="mt-2 text-slate-700">Due Dec 1, 2025 (aligns to resort’s Dec 3 payment).</p>
+                </div>
+                <div className="rounded-3xl p-6 bg-white shadow-sm border border-slate-100">
+                  <h4 className="font-semibold">Final Balance</h4>
+                  <p className="mt-2 text-slate-700">Due Feb 1, 2026 (before resort’s Feb 3 deadline).</p>
+                </div>
+              </div>
+              <p className="mt-6 text-sm text-slate-600">Organizer prepaid costs from resort quote: <b>$39,109.25</b>. All participant payments are non-refundable. Transfers allowed if a replacement attendee is found.</p>
+            </div>
+          </section>
+
+          <section id="policies" className="max-w-6xl mx-auto px-4 py-16">
+            <div className="grid lg:grid-cols-2 gap-10">
+              <div className="rounded-3xl p-8 bg-white shadow-sm border border-slate-100">
+                <h3 className="text-xl font-semibold">Travel Insurance (Required)</h3>
+                <p className="mt-3 text-slate-700">Each participant must purchase travel insurance that includes trip cancellation/interruption, medical coverage abroad, and emergency evacuation. Cancel For Any Reason (CFAR) is strongly recommended. Provide insurer + policy number with your reservation.</p>
+                <ul className="mt-4 text-slate-700 space-y-1">
+                  <li>• Examples: Allianz, AIG Travel Guard, IMG, Seven Corners, World Nomads.</li>
+                </ul>
+              </div>
+              <div className="rounded-3xl p-8 bg-white shadow-sm border border-slate-100">
+                <h3 className="text-xl font-semibold">Liability & Wellness Acknowledgment</h3>
+                <p className="mt-3 text-slate-700">By reserving, you acknowledge participation in wellness and recreational activities (yoga, fitness, spa, excursions, golf transport). This retreat is not medical care; consult your providers as needed. A signed waiver is required (digital form below).</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="signup" className="bg-emerald-50/80">
+            <div className="max-w-3xl mx-auto px-4 py-16">
+              <div className="rounded-3xl p-8 bg-white shadow-xl border border-emerald-100">
+                <h2 className="text-2xl font-semibold">Reserve Your Spot</h2>
+                <p className="mt-2 text-slate-700">Complete the form; you’ll receive an email to submit your deposit and upload proof of insurance. Digital signatures are accepted.</p>
+
+                <form className="mt-6 grid grid-cols-1 gap-4" onSubmit={(e) => e.preventDefault()}>
+                  <div>
+                    <label className="text-sm">Full Name</label>
+                    <input className="mt-1 w-full rounded-xl border border-slate-300 p-3" placeholder="Jane Doe"/>
+                  </div>
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    <div>
+                      <label className="text-sm">Email</label>
+                      <input className="mt-1 w-full rounded-xl border border-slate-300 p-3" type="email" placeholder="you@example.com"/>
+                    </div>
+                    <div>
+                      <label className="text-sm">Phone</label>
+                      <input className="mt-1 w-full rounded-xl border border-slate-300 p-3" placeholder="+1 (555) 000-0000"/>
+                    </div>
+                  </div>
+                  <div>
+                    <label className="text-sm">Address</label>
+                    <input className="mt-1 w-full rounded-xl border border-slate-300 p-3" placeholder="Street, City, State, ZIP"/>
+                  </div>
+                  <div>
+                    <label className="text-sm">Emergency Contact (Name & Phone)</label>
+                    <input className="mt-1 w-full rounded-xl border border-slate-300 p-3" placeholder="Name · +1 (555) 000-0000"/>
+                  </div>
+                  <div>
+                    <label className="text-sm">Insurance (Company & Policy #)</label>
+                    <input className="mt-1 w-full rounded-xl border border-slate-300 p-3" placeholder="e.g., Allianz · ABC123456"/>
+                  </div>
+
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    <div>
+                      <label className="text-sm">Typed Signature (full legal name)</label>
+                      <input className="mt-1 w-full rounded-xl border border-slate-300 p-3" placeholder="Jane A. Doe"/>
+                    </div>
+                    <div>
+                      <label className="text-sm">Date</label>
+                      <input className="mt-1 w-full rounded-xl border border-slate-300 p-3" type="date"/>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3 mt-2">
+                    <input id="agree" type="checkbox" className="mt-1 h-5 w-5 rounded border-slate-300"/>
+                    <label htmlFor="agree" className="text-sm text-slate-700">I agree to the non-refundable payment terms and acknowledge the liability & wellness notice above.</label>
+                  </div>
+
+                  <div className="flex flex-wrap gap-3 mt-6">
+                    <button type="submit" className="px-5 py-3 rounded-2xl bg-emerald-600 text-white hover:bg-emerald-700 shadow">Submit Reservation</button>
+                    <a href="Tracy_Retreat_Signup_Waiver_Detailed_Fillable_Insurance.pdf" className="px-5 py-3 rounded-2xl bg-white border border-slate-200 hover:bg-slate-50">Download Waiver (PDF)</a>
+                  </div>
+                  <p className="mt-3 text-xs text-slate-500">Prototype only. Connect to your CRM or payment links for production.</p>
+                </form>
+              </div>
+            </div>
+          </section>
+
+          <footer className="py-10">
+            <div className="max-w-6xl mx-auto px-4 text-sm text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <p>© 2025 Tracy Hook LLC · All rights reserved</p>
+              <p className="text-slate-400">Designed in the spirit of <span className="text-emerald-700 font-semibold">Wellgevity</span> — Wellness • Joy • Longevity</p>
+            </div>
+          </footer>
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<WellgevityRetreatLanding />);
+  </script>
+</body>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wellgevity • Lula Retreat 2026</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background: linear-gradient(to bottom, #ecfdf5, white, #fff1f2); }
+  </style>
+</head>
+<body class="text-slate-800">
+  <div id="root"></div>
+
+  <script type="text/babel">
+    function WellgevityRetreatLanding() {
+      return (
+        <div className="min-h-screen bg-gradient-to-b from-emerald-50 via-white to-rose-50 text-slate-800">
+          <header className="sticky top-0 z-40 backdrop-blur bg-white/70 border-b border-slate-200">
+            <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <svg width="164" height="28" viewBox="0 0 820 140" className="text-emerald-700">
+                  <defs>
+                    <linearGradient id="wgGrad" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stopColor="#047857"/>
+                      <stop offset="100%" stopColor="#10b981"/>
+                    </linearGradient>
+                  </defs>
+                  <text x="0" y="105" fontFamily="'Inter',ui-sans-serif" fontWeight="700" fontSize="110" fill="url(#wgGrad)">WELLGEVITY</text>
+                </svg>
+                <span className="hidden sm:block text-sm tracking-wide text-slate-500">Wellness • Joy • Longevity</span>
+              </div>
+              <nav className="hidden md:flex items-center gap-6 text-sm">
+                <a href="#details" className="hover:text-emerald-700">Retreat</a>
+                <a href="#inclusions" className="hover:text-emerald-700">What’s Included</a>
+                <a href="#policies" className="hover:text-emerald-700">Policies</a>
+                <a href="#signup" className="px-4 py-2 rounded-xl bg-emerald-600 text-white hover:bg-emerald-700 shadow">Reserve</a>
+              </nav>
+            </div>
+          </header>
+
+          <section className="relative overflow-hidden">
+            <div className="absolute inset-0 -z-10 bg-[url('https://images.unsplash.com/photo-1519821172140-1a6b91bcd7b3?q=80&w=1600&auto=format&fit=crop')] bg-cover bg-center opacity-70" />
+            <div className="max-w-5xl mx-auto px-4 py-24 sm:py-28">
+              <div className="backdrop-blur-md bg-white/60 rounded-3xl p-8 sm:p-12 shadow-xl">
+                <p className="uppercase tracking-widest text-xs text-slate-600">Lula Resort • Tulum, Mexico</p>
+                <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight text-slate-900">Reclaim Your Joy — Lula Wellness Retreat</h1>
+                <p className="mt-3 text-lg text-slate-700">March 17–22, 2026 · Hosted by Tracy Hook, NBC-HWC</p>
+                <p className="mt-4 text-slate-700">Five nights of sun, ceremony, and science-backed coaching designed to reset your nervous system and reignite purpose.</p>
+                <div className="mt-6 flex flex-wrap gap-3">
+                  <a href="#signup" className="px-5 py-3 rounded-2xl bg-emerald-600 text-white hover:bg-emerald-700 shadow">Reserve Your Spot</a>
+                  <a href="#details" className="px-5 py-3 rounded-2xl bg-white/80 hover:bg-white border border-slate-200">See Details</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="details" className="max-w-6xl mx-auto px-4 py-16">
+            <div className="grid md:grid-cols-2 gap-10 items-start">
+              <div className="bg-white rounded-3xl shadow-sm p-8 border border-slate-100">
+                <h2 className="text-2xl font-semibold">Retreat Overview</h2>
+                <ul className="mt-4 space-y-2 text-slate-700">
+                  <li>• <b>Dates:</b> March 17–22, 2026 (5 nights)</li>
+                  <li>• <b>Location:</b> Lula Resort, Tulum, Mexico</li>
+                  <li>• <b>Rooms:</b> 10 total (Beach Master Suite, Upper & Lower Beach Suites)</li>
+                  <li>• <b>Guests:</b> 12 (11 guests + Tracy)</li>
+                  <li>• <b>Hosted by:</b> Tracy Hook, Board-Certified Health & Wellness Coach (NBC-HWC)</li>
+                </ul>
+                <div className="mt-6 p-4 rounded-2xl bg-emerald-50 border border-emerald-100">
+                  <p className="text-sm text-emerald-900">This page mirrors Lula’s proposal: family-style dining, private wellness classes, canal float, spa services, and golf transport are curated for the group experience.</p>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-3xl shadow-sm p-8 border border-slate-100">
+                <h3 className="text-xl font-semibold">Included at a Glance</h3>
+                <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 text-slate-700">
+                  <li>• 5 Breakfasts</li>
+                  <li>• 3 Lunches</li>
+                  <li>• 5 Dinners (family style)</li>
+                  <li>• Private Ice Bath</li>
+                  <li>• Private Sound Bath</li>
+                  <li>• Private Salsa Class</li>
+                  <li>• 2 Yoga Classes</li>
+                  <li>• 2 Fitness Classes</li>
+                  <li>• Sian Ka’an Canal Float + Transport</li>
+                  <li>• 2x Round Trip Transport to Golf</li>
+                  <li>• 3x 60-min Ayurvedic Massages</li>
+                </ul>
+                <p className="mt-3 text-xs text-slate-500">Note: Cenote entrance (~$25/person) and golf fees (~$550/person for two rounds) are external and not included in the package.</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="inclusions" className="bg-white/70 border-y border-slate-200">
+            <div className="max-w-6xl mx-auto px-4 py-16">
+              <h2 className="text-2xl font-semibold">Investment & Payment Schedule</h2>
+              <div className="mt-6 grid md:grid-cols-3 gap-6">
+                <div className="rounded-3xl p-6 bg-white shadow-sm border border-slate-100">
+                  <h4 className="font-semibold">Per-Person Deposit</h4>
+                  <p className="mt-2 text-slate-700">$500–$1,000 non-refundable to reserve your room.</p>
+                </div>
+                <div className="rounded-3xl p-6 bg-white shadow-sm border border-slate-100">
+                  <h4 className="font-semibold">Second Payment</h4>
+                  <p className="mt-2 text-slate-700">Due Dec 1, 2025 (aligns to resort’s Dec 3 payment).</p>
+                </div>
+                <div className="rounded-3xl p-6 bg-white shadow-sm border border-slate-100">
+                  <h4 className="font-semibold">Final Balance</h4>
+                  <p className="mt-2 text-slate-700">Due Feb 1, 2026 (before resort’s Feb 3 deadline).</p>
+                </div>
+              </div>
+              <p className="mt-6 text-sm text-slate-600">Organizer prepaid costs from resort quote: <b>$39,109.25</b>. All participant payments are non-refundable. Transfers allowed if a replacement attendee is found.</p>
+            </div>
+          </section>
+
+          <section id="policies" className="max-w-6xl mx-auto px-4 py-16">
+            <div className="grid lg:grid-cols-2 gap-10">
+              <div className="rounded-3xl p-8 bg-white shadow-sm border border-slate-100">
+                <h3 className="text-xl font-semibold">Travel Insurance (Required)</h3>
+                <p className="mt-3 text-slate-700">Each participant must purchase travel insurance that includes trip cancellation/interruption, medical coverage abroad, and emergency evacuation. Cancel For Any Reason (CFAR) is strongly recommended. Provide insurer + policy number with your reservation.</p>
+                <ul className="mt-4 text-slate-700 space-y-1">
+                  <li>• Examples: Allianz, AIG Travel Guard, IMG, Seven Corners, World Nomads.</li>
+                </ul>
+              </div>
+              <div className="rounded-3xl p-8 bg-white shadow-sm border border-slate-100">
+                <h3 className="text-xl font-semibold">Liability & Wellness Acknowledgment</h3>
+                <p className="mt-3 text-slate-700">By reserving, you acknowledge participation in wellness and recreational activities (yoga, fitness, spa, excursions, golf transport). This retreat is not medical care; consult your providers as needed. A signed waiver is required (digital form below).</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="signup" className="bg-emerald-50/80">
+            <div className="max-w-3xl mx-auto px-4 py-16">
+              <div className="rounded-3xl p-8 bg-white shadow-xl border border-emerald-100">
+                <h2 className="text-2xl font-semibold">Reserve Your Spot</h2>
+                <p className="mt-2 text-slate-700">Complete the form; you’ll receive an email to submit your deposit and upload proof of insurance. Digital signatures are accepted.</p>
+
+                <form className="mt-6 grid grid-cols-1 gap-4" onSubmit={(e) => e.preventDefault()}>
+                  <div>
+                    <label className="text-sm">Full Name</label>
+                    <input className="mt-1 w-full rounded-xl border border-slate-300 p-3" placeholder="Jane Doe"/>
+                  </div>
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    <div>
+                      <label className="text-sm">Email</label>
+                      <input className="mt-1 w-full rounded-xl border border-slate-300 p-3" type="email" placeholder="you@example.com"/>
+                    </div>
+                    <div>
+                      <label className="text-sm">Phone</label>
+                      <input className="mt-1 w-full rounded-xl border border-slate-300 p-3" placeholder="+1 (555) 000-0000"/>
+                    </div>
+                  </div>
+                  <div>
+                    <label className="text-sm">Address</label>
+                    <input className="mt-1 w-full rounded-xl border border-slate-300 p-3" placeholder="Street, City, State, ZIP"/>
+                  </div>
+                  <div>
+                    <label className="text-sm">Emergency Contact (Name & Phone)</label>
+                    <input className="mt-1 w-full rounded-xl border border-slate-300 p-3" placeholder="Name · +1 (555) 000-0000"/>
+                  </div>
+                  <div>
+                    <label className="text-sm">Insurance (Company & Policy #)</label>
+                    <input className="mt-1 w-full rounded-xl border border-slate-300 p-3" placeholder="e.g., Allianz · ABC123456"/>
+                  </div>
+
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    <div>
+                      <label className="text-sm">Typed Signature (full legal name)</label>
+                      <input className="mt-1 w-full rounded-xl border border-slate-300 p-3" placeholder="Jane A. Doe"/>
+                    </div>
+                    <div>
+                      <label className="text-sm">Date</label>
+                      <input className="mt-1 w-full rounded-xl border border-slate-300 p-3" type="date"/>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3 mt-2">
+                    <input id="agree" type="checkbox" className="mt-1 h-5 w-5 rounded border-slate-300"/>
+                    <label htmlFor="agree" className="text-sm text-slate-700">I agree to the non-refundable payment terms and acknowledge the liability & wellness notice above.</label>
+                  </div>
+
+                  <div className="flex flex-wrap gap-3 mt-6">
+                    <button type="submit" className="px-5 py-3 rounded-2xl bg-emerald-600 text-white hover:bg-emerald-700 shadow">Submit Reservation</button>
+                    <a href="Tracy_Retreat_Signup_Waiver_Detailed_Fillable_Insurance.pdf" className="px-5 py-3 rounded-2xl bg-white border border-slate-200 hover:bg-slate-50">Download Waiver (PDF)</a>
+                  </div>
+                  <p className="mt-3 text-xs text-slate-500">Prototype only. Connect to your CRM or payment links for production.</p>
+                </form>
+              </div>
+            </div>
+          </section>
+
+          <footer className="py-10">
+            <div className="max-w-6xl mx-auto px-4 text-sm text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <p>© 2025 Tracy Hook LLC · All rights reserved</p>
+              <p className="text-slate-400">Designed in the spirit of <span className="text-emerald-700 font-semibold">Wellgevity</span> — Wellness • Joy • Longevity</p>
+            </div>
+          </footer>
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<WellgevityRetreatLanding />);
+  </script>
+</body>
+</html>
+
